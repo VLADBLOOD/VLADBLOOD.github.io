@@ -1,13 +1,26 @@
 body {
-  background-color: #edeef0;
+  background-color: #DDEBFB; /* #CFE6FF */
+}
+
+.navbar {
+  background-color: #2863C9;
+}
+
+.btn {
+  background-color: #337DFA;
+  color: white;
+}
+
+.badge {
+  background-color: #8FC5FF;
+}
+
+.card-header {
+  background-color: ;
 }
 
 .wrapper {
   padding-top: 15px;
-}
-
-.main {
-
 }
 
 .menu {
