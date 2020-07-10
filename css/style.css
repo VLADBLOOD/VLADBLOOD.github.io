@@ -1,85 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap');
 
 body {
-    background: #222222;
-    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
 }
 
-/* Навигационная панель */
-header {
-    width: 100%;
+nav {
+    position: absolute !important;
+    width: 100vw;
     height: 50px;
+    padding: 0px;
+    margin: 0px;
     background: #333336;
-    color: #979797;
-    display: flex;
 }
 
-/* Оберточный блок */
-.nav {
-    max-width: 1400px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 15px;
-    display: flex;
-    align-items: center;
-    font-size: 14px;
+.container {
+    background: #1c7430;
 }
 
-.nav ul {
-    display: flex;
-    margin: 0 auto;
-    width: 480px;
-    justify-content: space-between;
+.welcome {
+    background: #0b2e13;
 }
 
-.nav ul li {
-    list-style: none;
+.container-fluid {
+    height: 100vh;
+    background: #0c5460;
 }
 
-.nav ul li a {
-    text-decoration: none;
-    font-weight: lighter;
-    color: #979797;
+.padding-of-nav {
+    padding-top: 50px;
 }
 
-.nav ul li a:hover {
-    color: #ffffff;
-    transition: 0.25s;
-}
-
-/* Логотип */
-.logo {
-    text-decoration: none;
-    color: #979797;
-    font-size: 18px;
-}
-/* Оформление для логотипа */
-.color-text-white {
-    color: #ffffff;
-}
-/* Оформление для логотипа */
-.color-text-cyan {
-    color: #00A7CB;
-}
-
-/* Ссылка на профиль в панели навигации */
-.nav_profile {
-    text-decoration: none;
-    color: #979797;
+.marker {
+    background: #6f42c1 !important;
 }
 
 
-/* Обложка */
-.collapse {
-    width: auto;
-    height: 94vh;
-    background: url(../img/bg.png) no-repeat center;
-    background-size: cover;
 
-}
-
+::-webkit-scrollbar { width: 3px; height: 3px;}
+::-webkit-scrollbar-button {  background-color: #666; }
+::-webkit-scrollbar-track {  background-color: #999;}
+::-webkit-scrollbar-track-piece { background-color: #ffffff;}
+::-webkit-scrollbar-thumb { height: 50px; background-color: #666; border-radius: 3px;}
+::-webkit-scrollbar-corner { background-color: #999;}
+::-webkit-resizer { background-color: #666;}
