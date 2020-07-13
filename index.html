@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="ru">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="SportPlace | Главная">
@@ -9,59 +9,43 @@
 
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <!-- Custom styles for this template -->
-	<link href="./style.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
 
 
 
 </head>
 <body>
 
-	<nav>
-		<div class="container">
-				<span class="logo">PLACESport</span>
-					<ul class="navbar" id="menu">
-						<li class="navbar-item"><a href="#">ГЛАВНАЯ</a></li>
-						<li class="navbar-item"><a href="#">ВСТРЕЧИ</a></li>
-						<li class="navbar-item"><a href="#">КАРТА</a></li>
-						<li class="navbar-item"><a href="#">ПОДДЕРЖКА</a></li>
-						<li class="navbar-item navbar-profile-hide" id="profile"><a href="#">ПРОФИЛЬ</a></li>
-					</ul>
-				<span class="profile">
+<!-- Панель навигации -->
+<nav>
+    <div class="container">
+        <span class="logo"><span style="color:#bbbbb9;font-weight:lighter">PLACE</span><span style="color:#1ba4bb;font-weight: lighter">SPORT</span></span>
+        <ul class="navbar" id="menu">
+            <li class="navbar-item"><a href="#">ГЛАВНАЯ</a></li>
+            <li class="navbar-item"><a href="#">ВСТРЕЧИ</a></li>
+            <li class="navbar-item"><a href="#">КАРТА</a></li>
+            <li class="navbar-item"><a href="#">ПОДДЕРЖКА</a></li>
+            <li class="navbar-item navbar-profile-hide" id="profile"><a href="#">ПРОФИЛЬ</a></li>
+        </ul>
+        <span class="profile">
 					<a href="#">ПРОФИЛЬ  <i class='far fa-user-circle' style='font-size:1em;color:#999996'></i></a>
 				</span>
-				<span class="btn-nav-toggle">
+        <span class="btn-nav-toggle">
 					<button id="drop_menu"><i class='fas fa-bars' style='font-size:1.4em;color:#999996'></i></button>
 				</span>
-		</div>
-	</nav>
+    </div>
+</nav>
 
-	<div class="welcome">
-		<div class="container"></div>
-	</div> 
+<div class="welcome">
+    <div class="container button-holder">
+        <div class="wrap-button">
+            <p class="h1">ПРИСОЕДИНИТЕСЬ</p>
+            <p class="h6">К СПОРТИВНЫМ МЕРОПРИЯТИЯМ В ПАРУ КЛИКОВ</p>
+            <a class="button-start" href="#">ПРИСОЕДИНИТЬСЯ</a>
+        </div>
+    </div>
+</div>
 
-	<script type="text/javascript">
-		drop_menu.onclick = function()
-   			{	
-   				let elements = document.querySelectorAll('ul > li');
-
-				if(menu.className != 'navbar_show')
-        		{	
-        			menu.className = 'navbar_show';
-            		for (let elem of elements) {
-            			elem.className = 'navbar-item-dropdown';
-            		}
-            		profile.className = 'navbar-profile-show';
-        		}
-        		else
-        		{
-         		   menu.className = 'navbar';
-         		   for (let elem of elements) {
-            			elem.className = 'navbar-item';
-            		}
-            		profile.className = 'navbar-profile-hide';
-       			}
-    		}
-		</script>
-
+<script src='./js/menu.js'></script>
 </body>
 </html>
