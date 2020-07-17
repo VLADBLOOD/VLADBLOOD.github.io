@@ -5,6 +5,9 @@
     margin: 0;
 
     font-family: 'Roboto', sans-serif;
+
+    -webkit-tap-highlight-color: rgba(0,0,0,0) !important;
+    -webkit-tap-highlight-color: transparent !important; /* For some Androids */
 }
 
 body {
@@ -19,13 +22,15 @@ body {
 }
 
 nav {
-    position: absolute;
     display: flex;
+    position: absolute;
+
     height: 50px;
     width: 100vw;
 
     font-size: 0.8em;
     color: #999996;
+
     background-color: #333336;
 }
 
@@ -219,6 +224,7 @@ button {
 
 /* xs (<=543px) */
 @media (max-width: 575px) {
+    nav {font-size: 0.9em;}
     .container {
         width: 100%;
         padding: 0;
@@ -264,3 +270,5 @@ button {
 @media (min-width: 1200px) {
     .container {width: 1000px;}
 }
+
+ /* For some Androids */
