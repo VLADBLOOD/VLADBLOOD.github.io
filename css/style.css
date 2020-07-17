@@ -8,7 +8,7 @@
 }
 
 body {
-    overflow: hidden !important;
+    overflow-x: hidden !important;
 
     background-color: #222;
     color: #fff;
@@ -161,6 +161,11 @@ button {
     font-weight: bold;
 }
 
+.h3 {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
 .h6 {
     font-size: 1.13em;
     margin: 0 0 60px 0;
@@ -186,6 +191,30 @@ button {
     transition: 0.4s;
 }
 
+.card-preview {
+    height: 400px;
+    width: 100vw;
+}
+
+.liner {
+    position: absolute;
+    top: 100vh;
+    left: 0;
+
+    display: block;
+    margin: 13px 0 0 0;
+    height: 10px;
+    width: 50vw;
+
+    background-color: #333;
+}
+
+.card-holder {
+    text-align: left;
+    background-color: #222;
+}
+
+
 
 
 /* xs (<=543px) */
@@ -203,12 +232,22 @@ button {
     .button-start {
         padding: 20px 30px;
         font-size: 1em;}
+    .card-holder { text-align: center; }
+    .card {
+        float: left;
+        width: 95vw;
+        height: 250px;
+        margin: 20px 2.5vw;
+
+    }
 }
+    
 
 /* sm (>=576 и <=767) */
 @media (min-width: 576px) and (max-width: 767px) {
     .container {width: 550px;}
     .wrap-button {margin: 0 auto;}
+    .card-holder { text-align: left; }
 }
 
 /* md (>=768 и <=991) */
