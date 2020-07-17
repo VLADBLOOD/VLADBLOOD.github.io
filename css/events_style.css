@@ -10,6 +10,7 @@
 
 .content {
 	display: flex;
+
 	margin: 70px auto 0 auto;
 }
 
@@ -18,60 +19,127 @@
 }
 
 .filter {
-
 	width: 200px;
+	height: 500px;
+
 	padding: 15px;
 
-	box-shadow: 0 3px #1c1c16;
+	box-shadow: 0 4px #1c1c16;
 	border-radius: 10px;
 	background-color: #333336;
 }
 
 .card {
 	display: flex;
+
+	width: 450px;
+
 	align-content: space-between;
 	align-items: center;
 	padding: 15px;
-	width: 450px;
 	margin: 0 20px 20px 0;
 
-	box-shadow: 0 3px #1c1c16;
 	border-radius: 10px;
-	background: rgb(51,51,54);
-	background: linear-gradient(90deg, rgba(51,51,54,1) 0%, rgba(47,89,98,1) 100%);
-
-
+	background: #333336;
+	box-shadow: 0 4px #1f1f1f;
 }
 
 .card-title {
 	display: flex;
+
 	align-self: flex-start;
+	align-items: center;
 	padding: 0 0 10px 0;
 
 	font-size: 1em;
-
-	align-items: center;
 }
 
 .card-tag {
 	display: flex;
+
 	align-self: flex-end;
-	margin: 5px 3px 5px 0;
+	margin: 5px 3px 0 0;
 	padding: 3px 10px;
 
 	font-size: 0.82em;
 	font-weight: lighter;
-
 	color: #bcbcbc;
+
 	background-color: #444446;
 	border-radius: 10px;
 }
 
 .card-button {
 	display: flex;
-	margin-left: auto;
-	align-items: center;
-	text-align: center;
+
 	width: 60px;
 	height: 60px;
+
+	margin-left: auto;
+	align-items: center;
+
+	text-align: center;
+}
+
+.tag-wrapper {
+	display: flex;
+}
+
+.card-basketball {
+	background-image: linear-gradient(to right, rgba(51, 51, 54, 1), rgba(51, 51, 54, 1), rgba(51, 51, 54, 0.9)), url('../img/card_basketball.jpg');
+}
+
+.card-volleyball {
+	background-image: linear-gradient(to right, rgba(51, 51, 54, 1), rgba(51, 51, 54, 1), rgba(51, 51, 54, 0.9)), url('../img/card_volleyball.jpg');background-size: cover;
+}
+
+.card-football {
+	background-image: linear-gradient(to right, rgba(51, 51, 54, 1), rgba(51, 51, 54, 1), rgba(51, 51, 54, 0.9)), url('../img/card_foottball.jpg');background-size: cover;
+}
+
+/* xs (<=543px) */
+@media (max-width: 575px) {
+	.filter {display: none;}
+	.content {
+		width: auto;
+	}
+	.card {
+		height: 60px;
+		width: 100vw;
+		padding: 15px 0;
+		margin: 0 0 20px 0;
+	}
+	.card-title {
+		padding-left: 10px;
+	}
+	.card-button {
+		display: none;
+	}
+	.card-tag {
+		padding: 3px 10px;
+		font-size: 0.7em;
+	}
+	.card-tag:first-of-type {
+		margin-left: 10px;
+	}
+}
+
+/* sm (>=576 и <=767) */
+@media (min-width: 576px) and (max-width: 767px) {
+
+}
+
+/* md (>=768 и <=991) */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* lg (>=992 и <=1199) */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* xl (>=1200) */
+@media (min-width: 1200px) {
+
 }
