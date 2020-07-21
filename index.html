@@ -16,6 +16,29 @@
 </head>
 <body>
 
+<div id="feedback" class="feedback hide">
+
+    <button id="feedback_close" class="btn-close"><i class="fa">&#xf00d;</i></button>
+
+    <div class="feedback-wrapper">
+        <div class="feedback-form-wrap">
+        <p>Email</p>
+        <input class="feedback-input" type="text" name="name" />
+
+        <p>Ваше имя</p>
+        <input class="feedback-input" type="text" name="name" />
+
+        <p>Телефон</p>
+        <input class="feedback-input" type="text" name="name" />
+
+        <p>Сообщение</p>
+        <input style="height: 100px" class="feedback-input" type="text" name="name" />
+
+        <a style="margin: 0 auto; text-decoration: none; color: #ffffff" href="#">Отправить</a>
+        </div>
+    </div>
+</div>
+
 <!-- Панель навигации -->
 <nav>
     <div class="container">
@@ -24,7 +47,7 @@
             <li class="navbar-item"><a href="index.html">ГЛАВНАЯ</a></li>
             <li class="navbar-item"><a href="events.html">ВСТРЕЧИ</a></li>
             <li class="navbar-item"><a href="#">КАРТА</a></li>
-            <li class="navbar-item"><a href="#">ПОДДЕРЖКА</a></li>
+            <li class="navbar-item"><a id="support" href="#">ПОДДЕРЖКА</a></li>
             <li class="navbar-item navbar-profile-hide" id="profile"><a href="#">ПРОФИЛЬ</a></li>
         </ul>
         <span class="profile">
@@ -57,5 +80,6 @@
 </div>
 
 <script src='../js/menu.js'></script>
+<script src='../js/feedback.js'></script>
 </body>
 </html>

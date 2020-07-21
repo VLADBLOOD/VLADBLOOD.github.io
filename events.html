@@ -17,6 +17,29 @@
 </head>
 <body>
 
+<div id="feedback" class="feedback hide">
+
+    <button id="feedback_close" class="btn-close"><i class="fa">&#xf00d;</i></button>
+
+    <div class="feedback-wrapper">
+        <div class="feedback-form-wrap">
+            <p>Email</p>
+            <input class="feedback-input" type="text" name="name" />
+
+            <p>Ваше имя</p>
+            <input class="feedback-input" type="text" name="name" />
+
+            <p>Телефон</p>
+            <input class="feedback-input" type="text" name="name" />
+
+            <p>Сообщение</p>
+            <input style="height: 100px" class="feedback-input" type="text" name="name" />
+
+            <a style="margin: 0 auto; text-decoration: none; color: #ffffff" href="#">Отправить</a>
+        </div>
+    </div>
+</div>
+
 <!-- Панель навигации -->
 <nav>
     <div class="container">
@@ -25,7 +48,7 @@
             <li class="navbar-item"><a href="index.html">ГЛАВНАЯ</a></li>
             <li class="navbar-item"><a href="events.html">ВСТРЕЧИ</a></li>
             <li class="navbar-item"><a href="#">КАРТА</a></li>
-            <li class="navbar-item"><a href="#">ПОДДЕРЖКА</a></li>
+            <li class="navbar-item"><a id="support" href="#">ПОДДЕРЖКА</a></li>
             <li class="navbar-item navbar-profile-hide" id="profile"><a href="#">ПРОФИЛЬ</a></li>
         </ul>
         <span class="profile">
@@ -41,6 +64,11 @@
     <div class="container wrap">
         <div class="content">
             <div class="list">
+
+                <div class="sort">
+                    <p>Сортировать по</p>  
+                    <span style="color: #bcbcbc;"> дате </span> <i style="font-size:1em;color: #bcbcbc;" class="fa">&#xf0dd;</i>
+                </div>
 
                 <div class="card card-basketball">
                     <div class="card-wrapper">
@@ -125,7 +153,7 @@
                         </div>
                     </div>
                     <div class="card-button">
-                        <span class="fa-stack fa-lg">
+                        <span class="fa-stack fa-lg" style="align-items: center">
                             <i class="fas fa-circle fa-stack-2x"  style='color:#444446;'></i>
                             <i class='fas fa-user-plus  fa-stack-1x' style='font-size: 0.7em;color:#fff;'></i>
                         </span>
@@ -153,11 +181,29 @@
             </div>
             <div class="filter">
                 <p class="card-title">Фильтр</p>
+                <p class="filter-title">Дата</p>
+                <span class="filter-text">Число <span class="filter-adres" style="color: #bcbcbc; font-size: 0.85em">11 Сентября  <i class="fa fa-calendar"  style='color:#999999;font-size: 1em;'></i></span></span>
+                <p class="filter-title">Время</p>
+                <span class="filter-text">Укажите время</span>
+
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="20" class="slider" id="myRange">
+                </div>
+
+                <p class="filter-title">Адрес</p>
+                <span class="filter-text filter-adres"><i class="fa fa-search"  style='color:#999999;font-size: 0.77em;'></i> Начните вводить адрес</span>
+                <p class="filter-title">Участники</p>
+                <span class="filter-text">Кол-во участников</span>
+
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="80" class="slider" id="myRange">
+                </div>
             </div>
         </div>
     </div>
 </div>
 
+<script src='../js/feedback.js'></script>
 <script src='../js/menu.js'></script>
 </body>
 </html>
